@@ -1,0 +1,32 @@
+.propertiesPage{
+  display: flex;
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.propertiesPageMain{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.propertiesSidebar{
+  width: 30%;
+  /* background-color: green; */
+  height: 100vh;
+}
+
+@media screen and (max-width: 900px){
+  .propertiesPage{
+    flex-direction: column;
+  }
+  .propertiesPageMain{
+    width: 100%;
+  }
+  .propertiesSidebar{
+    width: 100%;
+  }
+  
+}

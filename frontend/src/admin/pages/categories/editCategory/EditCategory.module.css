@@ -1,0 +1,24 @@
+.card {
+  border-radius: 12px;
+  border: none;
+}
+
+.imagePreview {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #28a745;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #218838;
+}

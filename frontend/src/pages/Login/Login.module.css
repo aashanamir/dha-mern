@@ -1,0 +1,85 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa; /* Adjust background based on theme */
+}
+
+.loginCard {
+  width: 350px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.loginTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.statusLoading {
+  color: #ff9800;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.statusError {
+  color: #d9534f;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #28a745; /* Adjust based on theme */
+}
+
+.loginButton {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #28a745; /* Adjust based on theme */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 400px) {
+  .loginCard {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .loginTitle {
+    font-size: 18px;
+  }
+}

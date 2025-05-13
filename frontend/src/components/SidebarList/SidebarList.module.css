@@ -1,0 +1,58 @@
+.container {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.header {
+  background: #f7f7f7;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.item {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  cursor: pointer;
+  text-align: justify;
+}
+
+.item:hover {
+  text-decoration: underline;
+}
+
+.viewMore {
+  font-size: 14px;
+  color: #007680;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.viewMore:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 8px;
+  }
+  .header {
+    font-size: 13px;
+  }
+  .item {
+    font-size: 13px;
+  }
+}

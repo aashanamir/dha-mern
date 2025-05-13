@@ -1,0 +1,58 @@
+.sidebar {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.imageContainer{
+  width: 100%;
+  height: 100px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+.imageContainer img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+/* Recommended Searches */
+.recommended {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.recommendedTitle {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.searchList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.searchList li {
+  margin: 5px 0;
+}
+
+.searchList a {
+  text-decoration: none;
+  color: #005a69;
+  font-size: 14px;
+}
+
+.searchList a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) and (orientation: landscape) {
+  .sidebar {
+    max-width: 100%;
+  }
+}

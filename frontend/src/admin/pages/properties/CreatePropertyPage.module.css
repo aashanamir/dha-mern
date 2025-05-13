@@ -1,0 +1,13 @@
+.pageContainer {
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.btn-success {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}

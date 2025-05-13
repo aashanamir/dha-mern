@@ -1,0 +1,158 @@
+/* Filters Container */
+.filtersContainer {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  min-width: 100%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 20px;
+  width: 1150px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* First Row: Scrollable on Small Screens */
+.filterRow {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  align-items: center;
+  overflow-x: auto; /* Scroll on small screens */
+  scrollbar-width: thin; /* Hide scrollbar for small screens */
+  -ms-overflow-style: none;
+}
+
+/* Show scrollbar only in medium & large devices */
+@media (min-width: 768px) {
+  .filterRow {
+    overflow-x: visible;
+  }
+  .filterRow::-webkit-scrollbar {
+    height: 5px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .filterRow::-webkit-scrollbar-thumb {
+    background: #007b7f;
+    border-radius: 5px;
+  }
+}
+
+/* Dropdown Select Styling (Styled like buttons) */
+.dropdownSelect {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  appearance: none; /* Hide default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-align: left;
+  min-width: 80px;
+  transition: all 0.2s ease-in-out;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath fill='%23333' d='M5 6L0 0h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 10px;
+}
+
+/* Hover & Focus Effects */
+.dropdownSelect:hover {
+  border-color: #007b7f;
+  background: #f9f9f9;
+}
+.dropdownSelect:focus {
+  outline: none;
+  border-color: #007b7f;
+  box-shadow: 0 0 3px rgba(0, 123, 127, 0.3);
+}
+
+/* Input Box */
+.inputBox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 5px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.inputBox svg{
+  color: #007b7f;
+  margin-right: 12px;
+}
+
+/* Option Buttons */
+.optionButtons {
+  display: flex;
+  gap: 7px;
+  margin-right: 18px;
+}
+.optionButtons button {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: fit-content;
+}
+
+/* Active Button */
+.optionButtons .active {
+  background: #e6f4ea;
+  border-color: #4caf50;
+}
+
+/* More Filters Button */
+.moreFilters {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: fit-content;
+}
+
+/* Info Buttons */
+.infoButton {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: fit-content;
+}
+
+/* Save Search */
+.saveSearch {
+  color: #007b7f;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: fit-content;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .filterRow {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none; /* Hide scrollbar */
+  }
+  .inputBox {
+    min-width: 200px;
+  }
+}

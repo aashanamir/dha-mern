@@ -1,0 +1,117 @@
+/* General Skeleton Layout */
+.skeletonLayout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f8f8f8;
+}
+
+/* Skeleton Animation */
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+/* Skeleton Navbar */
+.skeletonNavbar {
+  width: 100%;
+  height: 60px;
+  background: #e0e0e0;
+  animation: pulse 1.5s infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Container for Sidebar & Content */
+.skeletonContainer {
+  display: flex;
+  flex: 1;
+  margin-top: 60px;
+}
+
+/* Skeleton Sidebar */
+.skeletonSidebar {
+  width: 250px;
+  height: 100vh;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.skeletonSidebarItem {
+  width: 100%;
+  height: 40px;
+  background: #e0e0e0;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  animation: pulse 1.5s infinite;
+}
+
+/* Skeleton Main Content */
+.skeletonMainContent {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Skeleton Card */
+.skeletonCard {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+/* Skeleton Image */
+.skeletonImage {
+  width: 100%;
+  height: 200px;
+  background: #e0e0e0;
+  animation: pulse 1.5s infinite;
+  border-radius: 5px;
+}
+
+/* Skeleton Text */
+.skeletonText {
+  width: 80%;
+  height: 16px;
+  background: #e0e0e0;
+  margin: 10px auto;
+  animation: pulse 1.5s infinite;
+  border-radius: 4px;
+}
+
+/* Skeleton Badge */
+.skeletonBadge {
+  width: 50%;
+  height: 20px;
+  background: #e0e0e0;
+  margin: 10px auto;
+  animation: pulse 1.5s infinite;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skeletonSidebar {
+    width: 100px;
+  }
+  
+  .skeletonSidebarItem {
+    height: 30px;
+  }
+  
+  .skeletonImage {
+    height: 150px;
+  }
+}

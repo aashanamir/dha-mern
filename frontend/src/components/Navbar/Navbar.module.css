@@ -1,0 +1,133 @@
+/* Navbar.module.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  width: 1150px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0e9f6e;
+  text-decoration: none;
+}
+
+.myBayut {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0e9f6e;
+  text-decoration: none;
+}
+
+.highlight {
+  color: #00a5a5;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #222;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+.menu svg {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.newBadge {
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+/* Mobile Menu Icon */
+.menuIcon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #0e9f6e;
+}
+
+
+/* Hover effect */
+.menu a {
+  text-decoration: none;
+  color: #222;
+  padding: 8px 12px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  color: #0e9f6e;
+  background-color: rgba(14, 159, 110, 0.1);
+  border-radius: 5px;
+}
+
+/* Active link */
+.menu a.active {
+  color: #fff;
+  background-color: #0e9f6e;
+  border-radius: 5px;
+}
+
+
+/* Custom Mobile Menu */
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block;
+  }
+
+  .navbar {
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding-top: 60px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease-in-out;
+  }
+
+  .menu.active {
+    left: 0;
+  }
+
+  .menu a {
+    font-size: 18px;
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+  }
+}

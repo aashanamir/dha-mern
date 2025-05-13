@@ -1,0 +1,130 @@
+/* List Filter Container */
+.listFilterContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Heading */
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Controls: Flexbox for Layout */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Dropdown Select (Replaces Button) */
+.dropdownSelect {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-align: left;
+  min-width: 180px;
+  transition: all 0.2s ease-in-out;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath fill='%23333' d='M5 6L0 0h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 10px;
+}
+
+/* Hover & Focus Effects */
+.dropdownSelect:hover {
+  border-color: #007b7f;
+  background: #f9f9f9;
+}
+.dropdownSelect:focus {
+  outline: none;
+  border-color: #007b7f;
+  box-shadow: 0 0 3px rgba(0, 123, 127, 0.3);
+}
+
+/* View Buttons */
+.viewButtons {
+  display: flex;
+  gap: 10px;
+}
+
+/* View Button Styling */
+.viewButton {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Active Button */
+.active {
+  background-color: #e6f7f7;
+  border-color: #009688;
+}
+
+/* Location Container */
+.locationContainer {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Location Links */
+.location a {
+  text-decoration: none;
+  color: #0077b6;
+  font-weight: bold;
+}
+
+/* View All Link */
+.viewAll {
+  margin-left: auto;
+  color: #0077b6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+.heading {
+  text-align: center;
+  }
+  
+  .viewButtons {
+    justify-content: center;
+  }
+
+  .dropdownSelect {
+    width: 100%;
+  }
+
+  .locationContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

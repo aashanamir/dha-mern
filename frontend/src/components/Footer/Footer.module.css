@@ -1,0 +1,84 @@
+.footer {
+  background: url("https://www.toptal.com/designers/subtlepatterns/uploads/black_mamba.png");
+  color: white;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.leftSection {
+  flex: 1;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.terms {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.flag {
+  width: 20px;
+  height: auto;
+  margin: 0 5px;
+}
+
+.copyright {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.rightSection {
+  text-align: right;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.appButtons img {
+  width: 120px;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rightSection {
+    margin-top: 15px;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
+
+  .appButtons img {
+    width: 100px;
+  }
+}

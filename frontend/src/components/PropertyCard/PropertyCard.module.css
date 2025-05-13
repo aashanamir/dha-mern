@@ -1,0 +1,183 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 800px;
+  max-height: 250px;
+  margin: 5px auto;
+  transition: 0.3s;
+  width: 100%;
+  border: 1px solid #dedede;
+}
+
+.imageContainer {
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+
+.propertyImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badges {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.badge {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.favorite {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.details {
+  padding: 10px;
+  width: 60%;
+}
+
+.price {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.price strong {
+  font-size: 16px;
+}
+
+.specs {
+  font-size: 12px;;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.specs span span {
+  font-weight: normal;
+  color: #555;
+}
+
+.detailsNormal {
+  font-weight: lighter;
+  color: #555;
+}
+
+.description {
+  font-size: 12px;;
+  margin-top: 5px;
+  color: #007b7f;
+}
+
+.location {
+  font-size: 12px;;
+  color: #000;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.location svg{
+  font-size: 8px;
+}
+
+.authenticity {
+  background: #ebeefc;
+  color: #2d3e9b;
+  fill: #2d3e9b;
+  padding: 6px;
+  border-radius: 5px;
+  font-size: 12px;;
+  margin-top: 5px;
+  width: fit-content;
+  text-align: left;
+}
+
+.extraInfo {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.tag {
+  background: #f7f7f8;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 100px;
+  text-align: center;
+}
+
+.contactButtons {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  /* background-color: red; */
+  width: 90%;
+}
+
+.contactButtons button {
+  flex: 1;
+  padding: 12px;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 5px;
+  color: #006169;
+  background-color: #e5eff0;
+  fill: #006169;
+}
+
+/* ✅ Fixed Media Query Issues */
+@media (max-width: 900px) and (orientation: landscape) {
+  .imageContainer img {
+    max-height: 200px;
+  }
+  .imageContainer, .details {
+    width: 100%;
+  }
+  .authenticity {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    max-height: none;
+  }
+  .imageContainer {
+    width: 100%;
+    max-height: 250px;
+  }
+  .propertyImage {
+    height: 250px;
+    object-fit: cover;
+  }
+  .details {
+    width: 100%;
+  }
+}
